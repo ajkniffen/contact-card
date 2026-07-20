@@ -11,87 +11,75 @@
             padding: 0;
         }
         body { 
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; 
-            background-color: #0b1324; 
-            color: #f8fafc; 
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; 
+            background-color: #000000; 
+            color: #111827; 
             display: flex; 
             justify-content: center; 
             align-items: center; 
             min-height: 100vh; 
-            padding: 24px; 
+            padding: 20px; 
         }
         .card { 
-            background: #152033; 
-            padding: 48px 36px; 
+            background-color: #ffffff; 
+            padding: 40px 32px; 
             border-radius: 16px; 
-            border: 1px solid #223352;
-            box-shadow: 0 12px 32px rgba(0, 0, 0, 0.4); 
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5); 
             text-align: center; 
-            max-width: 380px; 
+            max-width: 360px; 
             width: 100%; 
         }
-        .logo-container {
-            background-color: #ffffff;
-            padding: 14px 24px;
-            border-radius: 8px;
-            display: inline-block;
-            margin-bottom: 28px;
+        h1 { 
+            font-size: 28px; 
+            font-weight: 700;
+            color: #000000; 
+            margin-bottom: 20px;
+            letter-spacing: -0.5px;
         }
         .logo { 
             max-width: 160px; 
             height: auto; 
+            margin: 0 auto 28px auto; 
             display: block; 
         }
-        h1 { 
-            font-size: 26px; 
-            font-weight: 600;
-            color: #ffffff; 
-            letter-spacing: -0.3px;
-            margin-bottom: 16px;
-        }
         .btn { 
-            display: block;
-            background-color: #1e2e4a; 
+            display: inline-block;
+            background-color: #000000; 
             color: #ffffff; 
             text-decoration: none; 
-            padding: 14px 20px; 
+            padding: 12px 24px; 
             border-radius: 8px; 
-            font-weight: 500; 
-            font-size: 15px;
+            font-weight: 600; 
+            font-size: 14px;
             margin-bottom: 24px; 
-            border: 1px solid #2d436b;
-            transition: all 0.2s ease-in-out; 
+            transition: background-color 0.2s ease;
         }
         .btn:hover { 
-            background-color: #24375a;
-            border-color: #dc2626; /* Subtle brand red accent on hover */
-            color: #ffffff;
+            background-color: #222222; 
         }
         .links {
             display: flex;
             justify-content: center;
-            gap: 24px;
+            gap: 20px;
         }
         .links a { 
-            color: #94a3b8; 
+            color: #000000; 
             text-decoration: none; 
             font-size: 14px; 
-            font-weight: 400;
-            letter-spacing: 0.2px;
-            transition: color 0.2s ease;
+            font-weight: 500;
+            transition: opacity 0.2s ease;
         }
         .links a:hover {
-            color: #f8fafc;
+            opacity: 0.7;
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
     <div class="card">
-        <div class="logo-container">
-            <img src="MALogo.jpg" alt="Markus Alliance Logo" class="logo">
-        </div>
-
         <h1>Tony Kniffen</h1>
+        
+        <img src="MALogo.jpg" alt="Markus Alliance Logo" class="logo">
 
         <a href="Tony Kniffen.vcf" class="btn">Save Contact to Phone</a>
         
