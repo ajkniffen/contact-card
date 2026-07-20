@@ -42,36 +42,28 @@
             margin: 0 auto 28px auto; 
             display: block; 
         }
+        .btn-group {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            align-items: center;
+        }
         .btn { 
-            display: inline-block;
+            display: block;
+            width: 100%;
+            max-width: 220px;
             background-color: #0f172a; 
             color: #ffffff; 
             text-decoration: none; 
-            padding: 12px 24px; 
+            padding: 10px 16px; 
             border-radius: 8px; 
             font-weight: 600; 
-            font-size: 14px;
-            margin-bottom: 24px; 
-            transition: background-color 0.2s ease;
+            font-size: 13px;
+            transition: background-color 0.2s ease, transform 0.1s ease;
         }
         .btn:hover { 
             background-color: #1e293b; 
-        }
-        .links {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-        }
-        .links a { 
-            color: #000000; 
-            text-decoration: none; 
-            font-size: 14px; 
-            font-weight: 500;
-            transition: opacity 0.2s ease;
-        }
-        .links a:hover {
-            opacity: 0.7;
-            text-decoration: underline;
+            transform: translateY(-1px);
         }
     </style>
 </head>
@@ -81,11 +73,10 @@
         
         <img src="MALogo.jpg" alt="Markus Alliance Logo" class="logo">
 
-        <a href="Tony Kniffen.vcf" class="btn">Save Contact to Phone</a>
-        
-        <div class="links">
-            <a href="https://markusalliance.com" target="_blank">Website</a>
-            <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+        <div class="btn-group">
+            <a href="Tony Kniffen.vcf" class="btn">Download Contact Card</a>
+            <a href="https://www.linkedin.com" target="_blank" class="btn">LinkedIn Profile</a>
+            <a href="https://markusalliance.com" target="_blank" class="btn">Company Website</a>
         </div>
     </div>
 </body>
