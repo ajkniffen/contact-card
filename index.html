@@ -33,6 +33,89 @@
             font-size: 28px; 
             font-weight: 700;
             color: #000000; 
+            margin-bottom: 10px; /* Reduced by half */
+            letter-spacing: -0.5px;
+        }
+        .logo { 
+            max-width: 160px; 
+            height: auto; 
+            margin: 0 auto 28px auto; 
+            display: block; 
+            padding-right: 8px; /* Slightly reduced offset to align right side with the 'e' */
+        }
+        .btn-group {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            align-items: center;
+        }
+        .btn { 
+            display: block;
+            width: 100%;
+            max-width: 170px; /* Reduced width (~0.25in trimmed per side) */
+            background-color: #0f172a; 
+            color: #ffffff; 
+            text-decoration: none; 
+            padding: 10px 12px; 
+            border-radius: 8px; 
+            font-weight: 600; 
+            font-size: 13px;
+            transition: background-color 0.2s ease, transform 0.1s ease;
+        }
+        .btn:hover { 
+            background-color: #1e293b; 
+            transform: translateY(-1px);
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>Tony Kniffen</h1>
+        
+        <img src="MALogo.jpg" alt="Markus Alliance Logo" class="logo">
+
+        <div class="btn-group">
+            <a href="Tony Kniffen.vcf" class="btn">Download Contact Card</a>
+            <a href="https://www.linkedin.com" target="_blank" class="btn">LinkedIn Profile</a>
+            <a href="https://markusalliance.com" target="_blank" class="btn">Company Website</a>
+        </div>
+    </div>
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tony Kniffen | Markus Alliance</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; 
+            background-color: #0f172a; 
+            color: #111827; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            min-height: 100vh; 
+            padding: 20px; 
+        }
+        .card { 
+            background-color: #ffffff; 
+            padding: 40px 32px; 
+            border-radius: 16px; 
+            box-shadow: 0 12px 32px rgba(0, 0, 0, 0.4); 
+            text-align: center; 
+            max-width: 360px; 
+            width: 100%; 
+        }
+        h1 { 
+            font-size: 28px; 
+            font-weight: 700;
+            color: #000000; 
             margin-bottom: 20px;
             letter-spacing: -0.5px;
         }
